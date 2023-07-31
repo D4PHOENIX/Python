@@ -1,17 +1,10 @@
-def add(x, y):
-    return x + y
-def subtract(x, y):
-    return x - y
-def multiply(x, y):        
-    return x * y
-def divide(x, y):    
-    return x / y
-def remainder(x, y):
-    return x % y    
-def power(x, y):
-    return x ** y    
-def average(x, y):
-    return (x + y) / 2
+add = lambda x, y: x + y
+subtract = lambda  x, y: x - y
+multiply = lambda  x, y: x * y
+divide = lambda  x, y: x / y
+remainder = lambda  x, y: x % y    
+power = lambda x, y: x ** y    
+average = lambda x, y: (x + y) / 2
 
 inputNum1 = int(input("Enter first number: "))
 inputNum2 = int(input("Enter second number: "))
@@ -30,4 +23,4 @@ elif inputOperator == "%":
 elif inputOperator == "**":
     print(power(inputNum1, inputNum2))
 elif inputOperator == "avg":
-    print(average(inputNum1, inputNum2))           
+    print(average(inputNum1, inputNum2))
