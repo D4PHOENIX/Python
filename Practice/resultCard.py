@@ -28,3 +28,10 @@ print("Name ".center(20) + "\t|\t" + "Registration No.".center(18) + "\t|\t" + "
 print(userName.center(20) + "\t|\t" + str(regNo).center(18) + "\t|\t" + str(obtainedMarks).center(15) + "\t|\t" + str(totalMarks).center(15) + "\t|\t" + str(round(percentage,2)).center(15) + "\t|\t" + grade.center(15) + "\t|\n")
 
 print("\n\nThe student got {0} marks out of {1} marks and his percentage is {2}% and grade is {3}.".format(obtainedMarks, totalMarks, percentage, grade))
+
+
+while True:
+    # Your code here
+
+    if not condition:  # Replace 'condition' with your actual condition
+        break

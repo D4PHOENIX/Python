@@ -12,3 +12,9 @@ print("Tax Rate =", taxRate)
 discountAmount = valBeforeDiscount * percentDiscount / 100
 # d="NM*A/100"
 print("The Discount Amount is ", discountAmount)
+
+finalValue = 120;
+
+print("FinalValue < 100: ", finalValue < 100)
+print("FinalValue = 100: ", finalValue == 100)
+print("FinalValue > 100: ", finalValue > 100)
