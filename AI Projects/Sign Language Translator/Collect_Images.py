@@ -38,7 +38,7 @@ for i in range(number_of_classes):
                     cv2.LINE_AA)
         cv2.imshow('frame', frame)
         if cv2.waitKey(25) == 32:
-            break
+            break  
 
     counter = 0
     while counter < dataset_size:
