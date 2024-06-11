@@ -23,19 +23,20 @@ plt.show()
 
 # Prepare the data for KMeans clustering
 X = dataFrame[['cgpa', 'iq']].values
+# X = dataFrame.iloc[:,:]
 
 # Apply KMeans clustering
 km = KMeans(n_clusters=4, random_state=42)
 yMeans = km.fit_predict(X)
 
 # Plot the clusters
-plt.scatter(X[yMeans == 0, 0], X[yMeans == 0, 1], color='red', s=50, label='Cluster 1')
-plt.scatter(X[yMeans == 1, 0], X[yMeans == 1, 1], color='blue', s=50, label='Cluster 2')
-plt.scatter(X[yMeans == 2, 0], X[yMeans == 2, 1], color='green', s=50, label='Cluster 3')
-plt.scatter(X[yMeans == 3, 0], X[yMeans == 3, 1], color='cyan', s=50, label='Cluster 4')
+plt.scatter(X[yMeans == 0, 0], X[yMeans == 0, 1], color='red', marker='o', s=20, label='Cluster 1')
+plt.scatter(X[yMeans == 1, 0], X[yMeans == 1, 1], color='blue', marker='o', s=20, label='Cluster 2')
+plt.scatter(X[yMeans == 2, 0], X[yMeans == 2, 1], color='green', marker='o', s=20, label='Cluster 3')
+plt.scatter(X[yMeans == 3, 0], X[yMeans == 3, 1], color='cyan', marker='o', s=20, label='Cluster 4')
 
 # Plot the centroids
-plt.scatter(km.cluster_centers_[:, 0], km.cluster_centers_[:, 1], color='black', marker='*', s=100, label='Centroids')
+plt.scatter(km.cluster_centers_[:, 0], km.cluster_centers_[:, 1], color='black', marker='+', s=100, label='Centroids')
 
 # Label the axes and title
 plt.xlabel('CGPA')
