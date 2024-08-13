@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 
 # Load the data from CSV
 try:
-    dataFrame = pd.read_csv('D:\\University\\Programming\\Python\\Machine Learning\\K Means Clustering\\student_clustering.csv')
+    dataFrame = pd.read_csv('Machine Learning/K Means Clustering/student_clustering.csv')
 except FileNotFoundError:
     print("The file 'student_clustering.csv' was not found. Please check the file path.")
     exit()
